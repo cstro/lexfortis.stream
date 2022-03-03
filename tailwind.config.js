@@ -4,7 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'display': ['"Bebas Neue"', 'cursive'],
+      'body': ['"Open Sans"', 'sans-serif'],
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
